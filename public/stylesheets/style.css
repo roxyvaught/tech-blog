@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #A7C0CD;
+  --secondary-color: #506CF0;
+  --tertiary-color: #FE7860;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,17 +12,13 @@
 html {
   padding: 0;
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: rgb(255, 255, 255);
-  background-color: #afabab;
+  color: #ffffff;
+  background-color: var(--primary-color);
   position: relative;
 }
 
 body {
-  background: url(futuretech.jpg);
-  opacity: .8;
-  background-size: cover;
-
+  background-color: whitesmoke;
 }
 
 .main-body {
@@ -24,20 +26,18 @@ body {
 }
 
 p {
-  color: #ffffff;
+  color: tert;
 }
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: white;
   font-weight: bold;
   transition: color .1s;
-  text-shadow: 1px 1px #ffffff;
 }
 
 a:hover {
-  color: #ffffff;
-  text-shadow: 3px 3px #000000;
+  color: black;
 }
 
 button {
@@ -92,8 +92,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid #ffffff;
+  background-color: var(--secondary-color);
+  border-bottom: 1px solid var(--tertiary-color);
 }
 
 header h1 {
@@ -120,7 +120,7 @@ main {
 
 .btn-no-style:hover {
   background-color:rgb(0, 0, 0, .6);
-  color: rgb(255, 255, 255);
+  color: var(--tertiary-color);
 }
 
 .delete-post-btn {
@@ -130,7 +130,7 @@ main {
 
 .delete-post-btn:hover {
   background-color:rgb(0, 0, 0, .6);
-  color: rgb(255, 255, 255);
+  color: var(--tertiary-color);
 }
 
 .post {
@@ -143,11 +143,6 @@ main {
   font-size: 90%;
   color: #ff0000;
 }
-
-/* .edit-link {
-  display: block;
-  margin: -1.5% 0 2% 0;
-} */
 
 .upvote-btn {
   background-color:rgba(255, 255, 255, 0.6);
@@ -180,7 +175,7 @@ main {
 }
 
 .comment:nth-child(odd) {
-  background-color:rgba(0, 0, 0, 0.6);
+  background-color: var(--primary-color);
   color: white;
 }
 
@@ -193,6 +188,8 @@ main {
 #comment-body {
   opacity: 80%;
   color: rgb(0, 0, 0);
+  padding: 5px;
+  margin: 5px;
 }
 
 .submit-btn {
@@ -225,12 +222,10 @@ li
 
 .edit-post-form a {
   color: #ffffff;
-  text-shadow: 3px 3px #000000;
 }
 
 .edit-post-form a:hover{
   color: #000000;
-  text-shadow: 1px 1px #ffffff;
 }
 
 .btn {
@@ -240,14 +235,13 @@ li
 
 .btn:hover{
   color: #ffffff;
-  background-color:rgb(0, 0, 0, .6);
 }
 
 footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--secondary-color);
   border-top: 1px solid #ffffff;
   padding: 1%;
   text-decoration: none;
@@ -255,23 +249,21 @@ footer {
 
 footer h3 {
   color: #ffffff;
-  text-shadow: 3px 3px #000000;
 }
 
 footer a {
   color: #ffffff;
-  text-shadow: 3px 3px #000000;
 }
 
 footer a:hover{
   color: #000000;
-  text-shadow: 1px 1px #ffffff;
 }
 
 .post {
+  background-color: var(--primary-color);
   margin: auto;
   justify-content: center;
-  color: rgb(3, 0, 0);
+  color: black;
   border: 1px solid #ffffff;
   opacity: 80%;
 }
@@ -282,8 +274,6 @@ footer a:hover{
 
 .post a{
   color: #000000;
-  text-shadow: 3px 3px #ffffff;
-
 }
 
 .card a:hover {
@@ -306,6 +296,7 @@ footer a:hover{
 
 .card {
   opacity: 100%;
+  background-color: var(--primary-color);
 }
 
 
