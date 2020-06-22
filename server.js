@@ -6,6 +6,7 @@ const sequelize = require('./config/connection');
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({ helpers });
 const session = require('express-session');
+const cool = require('cool-ascii-faces');
 
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -20,7 +21,8 @@ const sess = {
    })
 };
 
-const app = express();
+const app = express()
+.get('/cool', (req, res) => res.send(cool()));
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
