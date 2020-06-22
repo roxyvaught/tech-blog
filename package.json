@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattkohl82/just-tech-news.git"
+    "url": "https://github.com/roxyvaught/tech-blog"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mattkohl82/just-tech-news/issues"
+    "url": "https://github.com/roxyvaught/tech-blog"
   },
-  "homepage": "https://github.com/mattkohl82/just-tech-news#readme",
+  "homepage": "https://github.com/roxyvaught/tech-blog",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^6.1.1",
