@@ -1,6 +1,6 @@
 # Tech Blog
   A MySQL database and CMS-style blog structured using a Model View Controller (MVC) paradigm. Handlebars.js is the templating language, Sequelize is the ORM, and authentication is achieved through the express-session npm package.
-  Site is deployed at [heroku](https://arcane-crag-67945.herokuapp.com/)
+  Site is deployed at [heroku](https://thawing-gorge-89250.herokuapp.com/)
 
   <img src = "assets\screenshot.JPG" alt="screenshot" />
 
